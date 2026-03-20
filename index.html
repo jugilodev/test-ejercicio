@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Test lógico</title>
+  <style>
+    .hidden {
+      opacity: 0;
+      font-size: 0;
+    }
+    body {
+      font-family: monospace;
+      background: #111;
+      color: #0f0;
+      padding: 20px;
+    }
+  </style>
+</head>
+<body>
+
+<h2>¿Cuál es el resultado?</h2>
+
+<pre>
+result = 0
+for x in [3,3,5]:
+    if x &gt;<span class="hidden">=</span> 3:
+        result = result - x
+    else:
+        result = result + x
+</pre>
+
+<input id="respuesta" placeholder="Tu respuesta">
+<button onclick="validar()">Enviar</button>
+
+<script>
+function validar() {
+  const r = document.getElementById('respuesta').value;
+  alert("Respuesta enviada: " + r);
+}
+</script>
+
+</body>
+</html>
