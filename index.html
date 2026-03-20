@@ -2,23 +2,50 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8">
-  <title>Test lógico</title>
+  <title>Ejercicio lógico</title>
   <style>
+    body {
+      font-family: monospace;
+      background: #0d1117;
+      color: #c9d1d9;
+      padding: 40px;
+    }
+
+    h2 {
+      margin-bottom: 20px;
+    }
+
+    pre {
+      background: #161b22;
+      padding: 20px;
+      border-radius: 8px;
+      color: #58a6ff;
+    }
+
     .hidden {
       opacity: 0;
       font-size: 0;
     }
-    body {
-      font-family: monospace;
-      background: #111;
-      color: #0f0;
-      padding: 20px;
+
+    ul {
+      margin-top: 20px;
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      background: #21262d;
+      margin: 8px 0;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #30363d;
+      width: 200px;
     }
   </style>
 </head>
 <body>
 
-<h2>¿Cuál es el resultado?</h2>
+<h2>¿Cuál es el resultado del siguiente código?</h2>
 
 <pre>
 result = 0
@@ -29,15 +56,12 @@ for x in [3,3,5]:
         result = result + x
 </pre>
 
-<input id="respuesta" placeholder="Tu respuesta">
-<button onclick="validar()">Enviar</button>
-
-<script>
-function validar() {
-  const r = document.getElementById('respuesta').value;
-  alert("Respuesta enviada: " + r);
-}
-</script>
+<ul>
+  <li>A) -11</li>
+  <li>B) -9</li>
+  <li>C) 11</li>
+  <li>D) 9</li>
+</ul>
 
 </body>
 </html>
